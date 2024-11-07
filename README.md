@@ -1,4 +1,5 @@
 # EnableFitnessApp
+![80](https://github.com/user-attachments/assets/17f4a639-ef85-4eae-800d-b95d9325c119)  
 iOS Utils Enable the 'Fitness' Application for iOS version lower than iOS 16.0
 ⚠️Need install via TrollStore. Applicable iOS version [14.0, 16.0)
 
@@ -17,6 +18,9 @@ iOS Utils Enable the 'Fitness' Application for iOS version lower than iOS 16.0
 因为iOS 16.0开始系统已经为所有iPhone默认开启了健身应用，所以无需本插件。  
 如果您没有Apple Watch那么开启了也没有什么用。  
 **如果你觉得没有什么用，那就对了，这个工具本身就是超小众需求。**  
+
+<img src="https://github.com/user-attachments/assets/4e4e5024-06e7-49cd-bf1c-5be27544de0b" width="300px"/>
+<img src="https://github.com/user-attachments/assets/81dd7cea-1b98-4a82-b677-b6892f00aee6" width="300px"/>
 
 ## Usage
 1. Download the `EnableFitnessApp.tipa` file from [Releases](https://github.com/DevelopCubeLab/EnableFitnessApp/releases) page.
