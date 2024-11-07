@@ -1,0 +1,9 @@
+Package: com.developlab.enablefitnessapp
+Name: EnableFitnessApp
+Version: 1.0
+Architecture: iphoneos-arm
+Description: 为低于iOS16.0系统开启'健身'App Enable the 'Fitness' Application for iOS version lower than iOS 16.0
+Maintainer: null
+Author: DevelopLab
+Section: Utilities
+Depends: firmware (>= 14.0) | ${LIBSWIFT}
