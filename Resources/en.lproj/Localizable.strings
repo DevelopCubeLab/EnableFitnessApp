@@ -1,0 +1,13 @@
+"CFBundleDisplayName" = "EnableFitnessApp";
+"Install_With_TrollStore_text" = "Already installed via TrollStore";
+"Need_Install_With_TrollStore_text" = "Requires TrollStore installation";
+"iOS15_text" = "Enable the 'Fitness' Application for iOS version lower than iOS 16.0\nClick 'Install profile file'button to start the install";
+"iOS16_text" = "iOS 16 or above iOS version already include with the 'Fitness' App, no need for this tool";
+"Install_Profile_text" = "Install profile file";
+"Respring_text" = "Respring";
+"Install_Fitness_Application_text" = "Install'Fitness'Applicaiton";
+"Install_Success_title" = "Successful";
+"Install_Success_text" = "The configuration file is installed successfully. Please click the 'Respring' button to respring and install the 'Fitness' Application.";
+"Install_Failed_title" = "Failed!";
+"Install_Failed_text" = "Failed to install profile file, please try again";
+"Close_text" = "Close";
