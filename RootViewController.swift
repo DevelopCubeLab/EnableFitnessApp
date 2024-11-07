@@ -68,6 +68,16 @@ class RootViewController: UIViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false  // 禁用自动调整大小
         imageView.contentMode = .scaleAspectFit  // 设置图片适应方式
 
+        let openSourceLabel = UILabel()
+        openSourceLabel.translatesAutoresizingMaskIntoConstraints = false
+        openSourceLabel.text = "GitHub"
+        openSourceLabel.textAlignment = .center
+        openSourceLabel.textColor = UIColor.label
+        openSourceLabel.isUserInteractionEnabled = true // 可点击
+        // 添加手势识别器
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onClickOpenSourceButton))
+        openSourceLabel.addGestureRecognizer(tapGesture)
+        
         // 将View添加到视图中
         self.view.addSubview(imageView)
         self.view.addSubview(checkPermissionLabel)
@@ -75,6 +85,7 @@ class RootViewController: UIViewController {
         self.view.addSubview(installProfileButton)
         self.view.addSubview(respringButton)
         self.view.addSubview(installFitnessButton)
+        self.view.addSubview(openSourceLabel)
         
         NSLayoutConstraint.activate([
             
@@ -106,7 +117,12 @@ class RootViewController: UIViewController {
             installFitnessButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor), // 水平居中
             installFitnessButton.topAnchor.constraint(equalTo: respringButton.bottomAnchor, constant: 30),
             installFitnessButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20), // 左侧边距
-            installFitnessButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20) // 右侧边距
+            installFitnessButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20), // 右侧边距
+            
+            openSourceLabel.widthAnchor.constraint(equalToConstant: 100),  // 设置宽度
+            openSourceLabel.heightAnchor.constraint(equalToConstant: 20), // 设置高度
+            openSourceLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor), // 水平居中
+            openSourceLabel.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
         ])
         
         self.view.layoutIfNeeded()
@@ -138,6 +154,14 @@ class RootViewController: UIViewController {
         if let url = URL(string: "https://apps.apple.com/app/fitness/id1208224953") {
             // 使用 UIApplication.shared.open 来打开链接
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+    
+    @objc func onClickOpenSourceButton() {
+        if let url = URL(string: "https://github.com/DevelopCubeLab/EnableFitnessApp") {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            }
         }
     }
     
