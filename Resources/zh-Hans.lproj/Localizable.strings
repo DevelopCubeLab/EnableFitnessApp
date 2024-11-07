@@ -6,7 +6,7 @@
 "Respring_text" = "注销";
 "Install_Fitness_Application_text" = "安装'健身'App";
 "Install_Success_title" = "成功";
-"Install_Success_text" = "安装配置文件成功，请点击'注销'按钮，注销后安装'健身'App";
+"Install_Success_text" = "安装配置文件成功，请点击'注销'按钮，注销后安装'健身'App\n安装后您可以安全的卸载此工具，它将没有任何作用";
 "Install_Failed_title" = "失败";
 "Install_Failed_text" = "安装配置文件失败，请再试一次";
 "Close_text" = "关闭";
