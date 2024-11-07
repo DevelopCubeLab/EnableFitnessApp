@@ -7,7 +7,7 @@
 "Respring_text" = "Respring";
 "Install_Fitness_Application_text" = "Install'Fitness'Applicaiton";
 "Install_Success_title" = "Successful";
-"Install_Success_text" = "The configuration file is installed successfully. Please click the 'Respring' button to respring and install the 'Fitness' Application.";
+"Install_Success_text" = "The configuration file is installed successfully.\n Please click the 'Respring' button to respring and install the 'Fitness' Application.\nFinally, you can safely uninstall this tool, it will no longer have any effect.";
 "Install_Failed_title" = "Failed!";
 "Install_Failed_text" = "Failed to install profile file, please try again";
 "Close_text" = "Close";
