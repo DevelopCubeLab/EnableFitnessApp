@@ -74,7 +74,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
-	<string>Launch Screen.storyboard</string>
+	<string>Launch Screen</string>
 	<key>CFBundleDisplayName</key>
 	<string>EnableFitnessApp</string>
 </dict>

@@ -16,4 +16,4 @@ $(APPLICATION_NAME)_CODESIGN_FLAGS = -Sentitlements.plist
 
 after-package::
 	@echo "Renaming .ipa to .tipa..."
-	@mv ./packages/com.developlab.enablefitnessapp_1.1.ipa ./packages/com.developlab.enablefitnessapp_1.1.tipa || echo "No .ipa file found."
+	@mv ./packages/com.developlab.enablefitnessapp_1.2.ipa ./packages/com.developlab.enablefitnessapp_1.2.tipa || echo "No .ipa file found."

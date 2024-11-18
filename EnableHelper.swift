@@ -3,7 +3,7 @@ import UIKit
 
 class EnableHelper {
     
-    func checkInstallPremission() -> Bool {
+    func checkInstallPermission() -> Bool {
         let path = "/var/mobile/Library/Preferences"
         let writeable = access(path, W_OK) == 0
         return writeable
