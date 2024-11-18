@@ -15,7 +15,7 @@ class RootViewController: UIViewController {
         checkPermissionLabel.translatesAutoresizingMaskIntoConstraints = false
         checkPermissionLabel.textAlignment = .center  // 设置文本居中
         
-        var enable = helper.checkInstallPremission()
+        var enable = helper.checkInstallPermission()
         
         if(enable) {
             checkPermissionLabel.text = NSLocalizedString("Install_With_TrollStore_text", comment: "")
@@ -67,6 +67,9 @@ class RootViewController: UIViewController {
         let imageView = UIImageView(image: appIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false  // 禁用自动调整大小
         imageView.contentMode = .scaleAspectFit  // 设置图片适应方式
+        // 无障碍标签
+        imageView.isAccessibilityElement = true // 声明这是一个可访问性元素
+        imageView.accessibilityLabel = NSLocalizedString("CFBundleDisplayName", comment: "")
 
         let openSourceLabel = UILabel()
         openSourceLabel.translatesAutoresizingMaskIntoConstraints = false
